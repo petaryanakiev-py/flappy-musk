@@ -123,6 +123,10 @@ function updateGameArea() {
         myObstacles.push(new component(15, x - height - gap, "green", x, height + gap));
     }
 
+    if (myGameArea.frameNo % 500 === 0) {
+        myGamePiece.x += 3;
+    }
+
     for (i = 0; i < myObstacles.length; i += 1) {
         myObstacles[i].x += -3;
         myObstacles[i].update();
@@ -145,7 +149,9 @@ function accelerate(n) {
     } else {
         myGamePiece.image.src = "img/tesla.png";
     }
-    if (!myGameArea.interval) {myGameArea.interval = setInterval(updateGameArea, 20);}
+    if (!myGameArea.interval) {
+        myGameArea.interval = setInterval(updateGameArea, 20);
+    }
 
     myGamePiece.gravity = n;
 }
