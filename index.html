@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <title>Canvas Game</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="icofont/icofont.min.css">
+        <script src="game.js" defer></script>
+    </head>
+    <body onload="startGame()" onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.1)" ontouchstart="accelerate(-0.2)" ontouchend="accelerate(0.1)">
+        <div id="game-over" class="hidden">
+            <p>GAME OVER</p>
+        </div>
+    </body>
+</html>

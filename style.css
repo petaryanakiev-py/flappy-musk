@@ -1,0 +1,23 @@
+canvas {
+    border:1px solid #d3d3d3;
+    background-color: #f1f1f1;
+}
+
+#game-over {
+    position: fixed;
+    height: 270px;
+    width: 480px;
+    top: 9px;
+    left: 9px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 270px;
+    background-color:rgba(0, 0, 0, 0.3);
+    color: rgb(19, 213, 219);
+    font-size: large;
+    font-weight: bold;
+}
+
+.hidden {
+    visibility: hidden;
+}
