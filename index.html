@@ -6,9 +6,10 @@
         <title>Flappy Tesla</title>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="icofont/icofont.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
         <script src="game.js" defer></script>
     </head>
-    <body onload="startGame()" onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.1)" ontouchstart="accelerate(-0.2)" ontouchend="accelerate(0.1)">
+    <body class="container" onload="startGame()" onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.1)" ontouchstart="accelerate(-0.2)" ontouchend="accelerate(0.1)">
         <div id="game-over" class="hidden">
             <p>GAME OVER</p>
         </div>
