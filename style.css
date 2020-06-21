@@ -4,14 +4,13 @@ canvas {
 }
 
 #game-over {
-    position: fixed;
-    height: 270px;
+    /* position: fixed; */
+    height: 20px;
     width: 480px;
-    top: 9px;
-    left: 9px;
     text-align: center;
     vertical-align: middle;
-    line-height: 270px;
+    line-height: 20px;
+    margin-top: -50px;
     background-color:rgba(0, 0, 0, 0.3);
     color: rgb(19, 213, 219);
     font-size: large;
